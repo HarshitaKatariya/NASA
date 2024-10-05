@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOI 700 d</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+            z-index: 2;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%; 
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TOI 700 d</h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="TOI 700 d.png" alt="TOI 700 d">
+            </div>
+            <div class="info">
+                <h2>About TOI 700 d</h2>
+                <p>
+                    TOI 700 d is an Earth-sized exoplanet located about 100 light-years away in the constellation Dorado.
+                </p>
+                <p>
+                    TOI 700 ddiscovered by NASA’s Transiting Exoplanet Survey Satellite (TESS) in 2020. The planet is especially notable because it orbits within the habitable zone of its host star, where conditions might allow liquid water to exist on its surface.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong> Estimated to be similar to Earth's.</li>
+                    <li><strong>Size:</strong> Approximately 1.2 times the radius of Earth, making it a terrestrial, rocky planet.</li>
+                    <li><strong>Orbital Period:</strong> 37.4 Earth days.</li>
+                    <li><strong>Distance from Star:</strong>  It orbits around 0.16 AU from its star (close to its red dwarf star but within the habitable zone)</li>
+                    <li><strong>Star Type:</strong> TOI 700 is a cool M-dwarf (red dwarf) star, smaller and cooler than the Sun.</li>
+                </ul>
+
+                <h3>Conditions on TOI 700 d</h3>
+                <p>
+                    TOI 700 d receives about 86% of the sunlight that Earth receives, and it is believed to be within the habitable zone of its star, where surface temperatures could potentially allow for liquid water. This makes it one of the most promising candidates for studying exoplanet habitability.
+                </p>
+                <h3>Potential for Life</h3>
+                <p>Given its size, position in the habitable zone, and similarities to Earth, TOI 700 d is a strong candidate for future habitability studies. The presence of water and a stable atmosphere would be key factors in determining whether life could potentially exist on the planet.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong>  TOI 700 d is a prime target for upcoming space missions and telescopic observations, including the James Webb Space Telescope, to learn more about its atmospheric composition and surface conditions.</p>
+                <p><strong>Telescopic Observations:</strong> Future missions aim to analyze the planet’s atmosphere, looking for signs of water vapor, carbon dioxide, or other gases that could indicate the potential for life.</p>
+
+                <p>TOI 700 d is an exciting discovery in the search for Earth-like planets beyond our solar system. While much remains to be learned, its location in the habitable zone and Earth-like size make it one of the most intriguing exoplanets for further study.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

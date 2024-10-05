@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2-18 b</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+    
+
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >K2-18 b<h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="K2-18 b.png" alt="K2-18 b">
+            </div>
+            <div class="info">
+                <h2>About K2-18 b</h2>
+                <p>
+                    K2-18 b is a mini-Neptune exoplanet located about 124 light-years away in the constellation Leo.
+                </p>
+                <p>
+                    K2-18 b was discovered in 2015 by the K2 mission, a follow-up to the Kepler Space Telescope. K2-18 b has gained attention because it orbits within the habitable zone of its host star, raising the possibility that it could support liquid water in its atmosphere.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong>  About 8.6 times that of Earth.</li>
+                    <li><strong>Size:</strong> Approximately 2.6 times Earth’s radius, classifying it as a mini-Neptune.</li>
+                    <li><strong>Orbital Period:</strong>33 days.</li>
+                    <li><strong>Distance from Star:</strong> About 0.14 AU.</li>
+                    <li><strong>Star Type:</strong>  K2-18 b orbits a red dwarf star (K2-18), which is smaller and cooler than the Sun.</li>
+                </ul>
+
+                <h3>Conditions on K2-18 b</h3>
+                <p>
+                    K2-18 b is a gaseous planet, and its atmosphere has been the subject of extensive research due to signs of water vapor detected by the Hubble Space Telescope. This discovery makes it one of the few exoplanets where water vapor has been found, and it opens up questions about its potential for habitability.
+                </p>
+                <h3>Potential for Life</h3>
+                <p>K2-18 b is considered one of the more promising exoplanets for further habitability studies, primarily because it orbits in the habitable zone of its star, where conditions might allow for liquid water to exist. However, being a mini-Neptune, it likely lacks a solid surface, making it less suitable for life as we know it.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong> The detection of water vapor in K2-18 b’s atmosphere has made it a high-priority target for further study, especially with upcoming space telescopes like the James Webb Space Telescope (JWST).
+                </p>
+                <p><strong>Telescopic Observations:</strong> Future missions aim to study the planet's atmosphere in greater detail, especially to learn more about its composition and whether it could have liquid water.
+
+
+                <p>K2-18 b represents a unique class of planets that blur the line between rocky planets and gas giants. While its size and gaseous nature may not make it a strong candidate for hosting life as we know it, its atmospheric characteristics are intriguing, particularly the presence of water vapor. It offers a fascinating case for studying the atmospheres of exoplanets in the habitable zone of their stars.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

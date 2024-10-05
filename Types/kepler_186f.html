@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepler 186F</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+    
+
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >Kepler-186F</h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="kepler_186f.png" alt="Kepler-186f">
+            </div>
+            <div class="info">
+                <h2>About Kepler-186 F</h2>
+                <p>
+                    Kepler-186f is an Earth-sized exoplanet located about 500 light-years away in the constellation Cygnus. It orbits within the habitable zone of its star, Kepler-186, a red dwarf star, making it one of the first known planets with potential conditions to support liquid water. Slightly larger than Earth, Kepler-186f has sparked significant interest in the search for extraterrestrial life due to its size, location, and distance from its host star. While its atmosphere and surface conditions are still unknown, it remains a key candidate for future studies on planetary habitability.
+                </p>
+                <p>
+                    Kepler-186f is an exoplanet orbiting the red dwarf star Kepler-186, located about 500 light-years from Earth in the constellation Cygnus. It is particularly significant because it is the first Earth-sized planet discovered within the habitable zone of its star, where liquid water could potentially exist.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong> Estimated to be similar to Earth's, though exact measurements are unknown.</li>
+                    <li><strong>Size:</strong> 1.11 times the radius of Earth, making it slightly larger.</li>
+                    <li><strong>Orbital Period:</strong>130 Earth days.</li>
+                    <li><strong>Distance from Star:</strong> About 0.356 AU (approximately 36% of the distance from the Earth to the Sun).</li>
+                </ul>
+
+                <h3>Conditions on Kepler-186f</h3>
+                <p>
+                    Kepler-186f is located within the habitable zone, where temperatures may allow for liquid water to exist on its surface. The planet's size and distance from its star suggest that it may have conditions suitable for life, but the actual atmospheric and surface conditions are still unknown. The planet's star, being a red dwarf, emits less energy than the Sun, and the light reaching Kepler-186f is likely much redder and dimmer compared to Earth's daylight.
+                </p>
+                <h3>Potential for Life</h3>
+                <p><strong>Habitability:</strong> Kepler-186f is considered one of the most promising candidates for hosting life due to its location in the habitable zone and Earth-like size. However, no conclusive evidence of life has been found.</p>
+
+                <p><strong>Atmosphere:</strong> If Kepler-186f has an atmosphere, it could potentially trap heat and support liquid water, making it more likely to support life. The composition of the atmosphere, if it exists, remains unknown.
+                </p>
+
+
+                <p><strong>Radiation:</strong> Red dwarf stars like Kepler-186 tend to be more active in terms of stellar flares, which could affect the atmosphere and habitability of the planet. However, Kepler-186 appears to be a relatively quiet star.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong> Kepler-186f has drawn significant attention as it is the first Earth-sized planet found in the habitable zone of another star. This discovery has sparked interest in studying Earth-like exoplanets and their potential to harbor life.
+                </p>
+                <p><strong>Telescopic Observations:</strong> Future telescopic missions, such as those utilizing the James Webb Space Telescope (JWST), aim to study Kepler-186f’s atmosphere, searching for signs of water, oxygen, or other biosignatures that may indicate the presence of life.
+
+                <p>Kepler-186f remains a key target in the search for habitable worlds beyond our solar system, though much remains to be discovered about its environment and potential to support life.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

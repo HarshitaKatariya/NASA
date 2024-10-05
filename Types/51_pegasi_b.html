@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>51 Pegasi b</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size:1.2em ;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+            z-index: 2;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+    
+
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >51 Pegasi b<h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="51 Pegasi b.png" alt="HD 209458 b">
+            </div>
+            <div class="info">
+                <h2>About 51 Pegasi b</h2>
+                <p>
+                    51 Pegasi b, also known as Dimidium, is a gas giant exoplanet located about 50 light-years from Earth in the constellation Pegasus.
+                </p>
+                <p>
+                    Discovered in 1995, it was the first exoplanet found orbiting a Sun-like star, marking a major breakthrough in the search for planets outside our solar system. Like 51 Pegasi b, 51 Pegasi b is a "hot Jupiter," orbiting very close to its host star, 51 Pegasi.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong> About 0.46 times the mass of Jupiter.</li>
+                    <li><strong>Size:</strong> About 1.38 times Jupiter's radius, making it larger despite being less massive.</li>
+                    <li><strong>Orbital Period:</strong> Similar to Jupiter, with a slightly larger radius due to its proximity to its star.</li>
+                    <li><strong>Distance from Star:</strong> 0.05 AU (extremely close, leading to high surface temperatures).</li>
+                    <li><strong>Star Type:</strong>  51 Pegasi is a G-type main-sequence star, very similar to our Sun in size and temperature.</li>
+                </ul>
+
+                <h3>Conditions on 51 Pegasi b</h3>
+                As a "hot Jupiter," 51 Pegasi b orbits extremely close to its star, resulting in very high surface temperatures, likely exceeding 1,000°C (1,832°F). The planet is tidally locked, meaning one side is always facing the star, creating a permanent day side and a permanent night side.
+                <h3>Potential for Life</h3>
+                <p><strong>Atmosphere:</strong> The atmosphere is likely dominated by hydrogen and helium, similar to Jupiter. While detailed measurements of its atmosphere are still ongoing, it is expected to show signs of atmospheric expansion due to the intense heat from its star.
+                    Like other hot Jupiters, 51 Pegasi b may be experiencing atmospheric escape, where the upper layers of the atmosphere are being stripped away by stellar radiation.
+                    There may be high-altitude clouds or haze, but details of its weather patterns remain unclear.
+                    </p>
+
+                <p> 51 Pegasi b is not considered habitable due to its extreme temperatures, gaseous nature, and proximity to its host star. The lack of a solid surface and hostile conditions make it unlikely to support life as we know it</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong> As the first exoplanet discovered around a Sun-like star, 51 Pegasi b is historically important. Its discovery confirmed the existence of planets beyond the solar system and demonstrated that planetary systems can be very different from our own.
+                </p>
+                <p><strong>Telescopic Observations:</strong>  Studies of 51 Pegasi b have primarily focused on its mass, orbit, and star interactions. Further research with advanced telescopes may provide more insights into its atmosphere and any potential atmospheric escape.
+                </p>
+                
+                <p><strong>Nobel Prize:</strong> The discovery of 51 Pegasi b earned astronomers Michel Mayor and Didier Queloz the Nobel Prize in Physics in 2019, underscoring its significance in astronomy</p>
+                <p>51 Pegasi b remains a landmark exoplanet, paving the way for the discovery of thousands of exoplanets since its detection. It serves as a key example of "hot Jupiters" and continues to be a subject of interest in the field of exoplanetary science.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

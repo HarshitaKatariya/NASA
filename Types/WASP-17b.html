@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASP-17b</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+    
+
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >WASP-17b <h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="WASP-17b.png" alt="WASP-17b">
+            </div>
+            <div class="info">
+                <h2>About WASP-17b</h2>
+                <p>
+                    WASP-17b is a gas giant exoplanet located about 1,300 light-years away in the constellation Scorpius.
+                </p>
+                <p>
+                    It was discovered in 2009 and is notable for being one of the largest known exoplanets and for its retrograde orbit, which is opposite to the rotation of its host star. Classified as a "hot Jupiter," WASP-17b orbits very close to its star, leading to intense heat and extreme atmospheric conditions.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong>  0.49 times the mass of Jupiter, making it less massive but significantly larger in size.</li>
+                    <li><strong>Size:</strong> Approximately 1.93 times the radius of Jupiter, one of the largest known exoplanets.</li>
+                    <li><strong>Orbital Period:</strong>3.7 Earth days.</li>
+                    <li><strong>Distance from Star:</strong> 0.051 AU (very close to the star, leading to strong tidal forces).</li>
+                    <li><strong>Star Type:</strong>  WASP-17 is a F-type star, slightly larger and hotter than the Sun.</li>
+                </ul>
+
+                <h3>Conditions on WASP-17b</h3>
+                WASP-17b experiences extreme temperatures due to its close orbit around its star, with surface temperatures estimated to be around 1,600°C (2,900°F). The planet’s low density (about half the mass of Jupiter but nearly twice the size) suggests that its atmosphere is puffed up by the heat, making it extremely inflated.
+                <h3>Potential for Life</h3>
+
+                <p><strong>Atmosphere:</strong>  Composition: The planet's atmosphere likely contains hydrogen, helium, and traces of other gases. It may also have clouds of silicates and other compounds in its upper atmosphere. WASP-17b's orbit is unusual because it moves in the opposite direction of its star's rotation, a rare feature among exoplanets, which could be the result of a past gravitational interaction or collision. WASP-17b has an extremely low density, making it one of the least dense planets ever discovered, sometimes described as being "fluffier" than typical gas giants.
+
+                <p>Due to its extreme heat, lack of a solid surface, and gas giant composition, WASP-17b is not considered habitable. The intense radiation from its star and its low density further reduce the likelihood of it supporting any form of life.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong> WASP-17b's unique features, including its retrograde orbit and extreme inflation, make it an interesting subject for studying the formation and evolution of gas giants. Its low density offers insights into the effects of heat on planetary atmospheres
+                </p>
+                <p><strong>Telescopic Observations:</strong> Future studies using advanced telescopes may focus on further understanding the planet's atmosphere, including its cloud composition and how it maintains such a large size despite its low mass. The planet's unusual orbit is also of interest to astronomers studying planetary dynamics.
+
+
+                <p>WASP-17b is one of the most intriguing gas giants due to its size, low density, and retrograde orbit, providing valuable information about the diversity of exoplanetary systems and the extreme conditions found in hot Jupiters.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

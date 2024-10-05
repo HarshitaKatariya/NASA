@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HD 189733 b</title>
+            <style>
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                body {
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    background-image: url("GALAXY.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+                    background-position: center center; 
+                    background-attachment: fixed; 
+                    color: #ffffff; 
+                    display: flex;
+                    flex-direction: column;
+                    perspective: 1000px; 
+                }
+        
+                main {
+                    flex-grow: 1;
+                }
+        
+                header {
+                    background: transparent; 
+                    padding: 20px;
+                    text-align: center;
+                } 
+        
+                h1 {
+                    margin: 0;
+                    font-size: 3em; 
+                    font-family: 'Poppins', sans-serif; 
+                    color: #ffffff; 
+                    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                                0 0 30px rgba(255, 255, 255, 0.5), 
+                                0 0 45px rgba(0, 123, 255, 0.7);
+                }
+        
+                h3{
+                    text-decoration: underline;
+            
+        
+                }
+                .exoplanet-info {
+                    display: flex;
+                    flex-direction: column; 
+                    align-items: center; 
+                    padding: 20px;
+                }
+        
+                .image {
+                    display: flex;
+                    justify-content: center; 
+                    transform-style: preserve-3d;
+                    position: sticky; /* Sticky positioning */
+                    top: 20px; /* Stick at the top after scrolling 20px */
+                    margin-bottom: 20px;
+                    z-index: 1; /* Ensure image stays below other elements when scrolling */
+                }
+        
+                .image img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    object-fit: cover; 
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                    animation: spin 10s infinite linear; 
+                    transform-origin: center; 
+                }
+        
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+        
+                .info {
+                    width: 80%;
+                    padding: 20px; 
+                    background: rgba(255, 255, 255, 0.1); 
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+                    height: auto; 
+                    min-height: 400px;
+                    z-index: 2; /* Place the info box above the image */
+                    position: relative;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1 >HD 189733 b <h1>
+            </header>
+        
+            <main>
+                <section class="exoplanet-info">
+                    <div class="image">
+                        <img src="HD 189733 b.png" alt="HD 189733 b">
+                    </div>
+                    <div class="info">
+                        <h2>About HD 189733 b</h2>
+                        <p>
+                            HD 189733 b is a gas giant exoplanet classified as a "hot Jupiter," located about 64.5 light-years away in the constellation Vulpecula.
+                        </p>
+                        <p>
+                            Discovered in 2005, this planet is known for its striking blue color and extreme atmospheric conditions, including high-speed winds and intense heat. Its proximity to its host star results in harsh environmental features, making it a significant subject of study for exoplanet researchers.
+                        </p>
+                        
+                        <h3>Physical Characteristics</h3>
+                        <ul>
+                            <li><strong>Mass:</strong> 1.13 times that of Jupiter.</li>
+                            <li><strong>Size:</strong> 1.14 times Jupiter's radius, making it slightly larger than Jupiter.</li>
+                            <li><strong>Orbital Period:</strong> 2.2 Earth days.</li>
+                            <li><strong>Distance from Star:</strong> 0.03 AU (extremely close to its star, resulting in high temperatures).</li>
+                            <li><strong>Star Type:</strong> HD 189733 is a K-type main-sequence star, smaller and cooler than the Sun.</li>
+                        </ul>
+        
+                        <h3>Conditions on HD 189733 b</h3>
+                        <p>
+                            HD 189733 b experiences temperatures of around 1,000°C (1,832°F) due to its proximity to its host star. The planet is tidally locked, meaning one side is constantly facing the star, resulting in extreme temperature differences between the day and night sides. Winds on the planet can reach speeds of up to 8,700 kilometers per hour (5,400 mph), contributing to its hostile conditions.
+                        </p>
+                        <h3>Potential for Life</h3>        
+                        <p><strong>Atmosphere:</strong>The planet's atmosphere contains hydrogen, helium, and silicate particles, which scatter blue light and give the planet its striking blue appearance. The atmosphere may also contain water vapor, methane, and carbon dioxide. The intense winds transport heat around the planet, contributing to the extreme weather conditions.Silicate clouds in the atmosphere likely contribute to its deep blue color. The planet is also subject to intense storms driven by its close proximity to the sta</p>
+        
+                        <p>Due to its extreme heat, gas composition, and lack of a solid surface, HD 189733 b is not considered habitable. The harsh environmental conditions, including violent winds and high temperatures, make life as we know it impossible</p>
+        
+                        <h3>Exploration and Future Research</h3>
+                        <p><strong>Scientific Interest:</strong>  HD 189733 b is of great interest because of its proximity and the detailed information scientists can gather about its atmosphere. The planet’s unique blue color and atmospheric dynamics offer insights into the behavior of gas giants under extreme conditions.
+                        </p>
+                        <p><strong>Telescopic Observations:</strong>  Observations with the Hubble Space Telescope and other instruments have provided data on the planet's atmospheric composition, heat distribution, and weather patterns. Future research may focus on studying its storms and further understanding its weather and cloud dynamics.
+        
+        
+                        <p>HD 189733 b stands out for its vivid color and extreme weather, making it an important target for studying the atmospheres of hot Jupiters and the conditions of exoplanets close to their stars.</p>
+                    </div>
+                </section>
+            </main>
+        </body>
+        </html>

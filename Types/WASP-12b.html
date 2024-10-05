@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASP-12b</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+    
+
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >WASP-12b <h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="WASP-12b.png" alt="WASP-12b">
+            </div>
+            <div class="info">
+                <h2>About WASP-12b</h2>
+                <p>
+                    WASP-12b is a gas giant exoplanet classified as a "hot Jupiter," located about 1,400 light-years away in the constellation Auriga.
+                </p>
+                <p>
+                    Discovered in 2008, WASP-12b orbits extremely close to its host star, completing an orbit in just over 1 Earth day, making it one of the hottest known exoplanets.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong>  1.39 times that of Jupiter.</li>
+                    <li><strong>Size:</strong> Approximately 1.9 times Jupiter's radius, as it is heavily inflated due to intense heat.</li>
+                    <li><strong>Orbital Period:</strong>1.1 Earth days.</li>
+                    <li><strong>Distance from Star:</strong> 0.023 AU (very close to the star, causing extreme tidal forces).</li>
+                    <li><strong>Star Type:</strong>  The host star, WASP-12, is a G-type main-sequence star, similar to the Sun but slightly larger.</li>
+                </ul>
+
+                <h3>Conditions on WASP-12b</h3>
+                The planet experiences extreme temperatures of around 2,500°C (4,500°F) due to its close proximity to its star. These intense conditions cause WASP-12b to be stretched into an elongated shape as it is being tidally distorted by the star's gravity. The planet is also gradually losing its atmosphere into space, a process known as atmospheric escape.
+                <h3>Potential for Life</h3>
+
+                <p><strong>Atmosphere:</strong>  WASP-12b's atmosphere contains hydrogen, helium, and traces of heavier elements like carbon. It also shows evidence of clouds made from silicate particles and possibly carbon monoxide.The planet absorbs nearly all of the light from its star, making it appear extremely dark and non-reflective (low albedo).The planet is losing mass due to the star's radiation, with material from its atmosphere forming a gas cloud around it, which is being pulled toward the star.</p>
+
+                <p>WASP-12b is inhospitable for life due to its extreme heat, gas composition, and the fact that it lacks a solid surface. The planet's extreme tidal interactions with its star also create conditions that are unsuitable for any known form of life.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong> WASP-12b is studied for its extreme characteristics, including its atmospheric composition, tidal distortion, and rapid orbital period. It provides valuable insights into how gas giants behave under intense stellar radiation.
+                </p>
+                <p><strong>Telescopic Observations:</strong> Observations using the Hubble Space Telescope and other instruments have revealed important details about the planet's atmosphere and its interaction with the host star. Future studies will continue to explore atmospheric escape and the planet's unusual characteristics
+
+
+                <p>WASP-12b is a key example of the diverse and extreme environments found in exoplanetary systems, particularly among hot Jupiters.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

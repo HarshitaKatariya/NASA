@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LHS-1140</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-image: url("GALAXY.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            color: #ffffff; 
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            background: transparent; 
+            padding: 20px;
+            text-align: center;
+            z-index: 2;
+        } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em; 
+            font-family: 'Poppins', sans-serif; 
+            color: #ffffff; 
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.5), 
+                        0 0 45px rgba(0, 123, 255, 0.7);
+        }
+
+        h3{
+            text-decoration: underline;
+        }
+        .exoplanet-info {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center; 
+            transform-style: preserve-3d;
+            position: sticky; /* Sticky positioning */
+            top: 20px; /* Stick at the top after scrolling 20px */
+            margin-bottom: 20px;
+            z-index: 1; /* Ensure image stays below other elements when scrolling */
+        }
+
+        .image img {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: spin 10s infinite linear; 
+            transform-origin: center; 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info {
+            width: 80%;
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+            height: auto; 
+            min-height: 400px;
+            z-index: 2; /* Place the info box above the image */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 >LHS-1140<h1>
+    </header>
+
+    <main>
+        <section class="exoplanet-info">
+            <div class="image">
+                <img src="LHS-1140.png" alt="LHS-1140">
+            </div>
+            <div class="info">
+                <h2>About LHS-1140</h2>
+                <p>
+                    LHS 1140 b is a rocky exoplanet located approximately 40 light-years away from Earth, orbiting the red dwarf star LHS 1140 in the constellation Cetus.
+                </p>
+                <p>
+                    It was discovered in 2017 and is considered one of the most promising candidates for the search for life beyond our solar system due to its size, composition, and location in the star's habitable zone.
+                </p>
+                
+                <h3>Physical Characteristics</h3>
+                <ul>
+                    <li><strong>Mass:</strong> About 6.48 times that of Earth.</li>
+                    <li><strong>Size:</strong>  Roughly 1.6 times Earth's radius, making it a super-Earth.</li>
+                    <li><strong>Orbital Period:</strong> 24.7 Earth days.</li>
+                    <li><strong>Distance from Star:</strong> 0.09 AU (inside the habitable zone, where liquid water could potentially exist).</li>
+                    <li><strong>Star Type:</strong>  LHS 1140 is a red dwarf, smaller and cooler than the Sun.</li>
+                </ul>
+
+                <h3>Conditions on LHS-1140</h3>
+                LHS 1140 b is thought to have a rocky surface similar to Earth. Due to its larger mass and density, it likely has a strong gravitational pull. Although the exact atmospheric conditions remain unknown, its location in the habitable zone suggests that it could potentially support liquid water if an atmosphere is present.
+                <h3>Potential for Life</h3>
+    
+
+                <p><strong>Atmosphere:</strong>Its position in the habitable zone raises the possibility of liquid water existing on the planet's surface.
+                    While the exact details of its atmosphere remain unclear, future observations may reveal its atmospheric components, which are critical for understanding habitability.
+                    </p>
+
+                <p> LHS 1140 b is one of the most promising super-Earths for habitability due to its position in the habitable zone. However, the potential for life depends on many factors, including whether it has a stable atmosphere and liquid water. The planet’s strong gravitational force could retain a substantial atmosphere, protecting it from harmful radiation emitted by its red dwarf star.</p>
+
+                <h3>Exploration and Future Research</h3>
+                <p><strong>Scientific Interest:</strong>  LHS 1140 b's proximity and characteristics make it an ideal candidate for future telescopic observations. Scientists are especially interested in learning more about its atmosphere, surface conditions, and the possibility of water.
+                </p>
+                <p><strong>Telescopic Observations:</strong> The planet is a key target for the James Webb Space Telescope (JWST), which may provide data on its atmospheric composition and habitability.
+                </p>
+                <p>LHS 1140 b is a fascinating world with the potential to shed light on the nature of habitable exoplanets, making it a significant focus of current and future research. Its size, rocky composition, and location in the habitable zone of a red dwarf star make it an excellent candidate for further exploration in the search for life beyond Earth.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

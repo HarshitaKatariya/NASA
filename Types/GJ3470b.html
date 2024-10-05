@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>GJ 3470 b</title>
+            <style>
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                body {
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    background-image: url("GALAXY.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+                    background-position: center center; 
+                    background-attachment: fixed; 
+                    color: #ffffff; 
+                    display: flex;
+                    flex-direction: column;
+                    perspective: 1000px; 
+                }
+        
+                main {
+                    flex-grow: 1;
+                }
+        
+                header {
+                    background: transparent; 
+                    padding: 20px;
+                    text-align: center;
+                } 
+        
+                h1 {
+                    margin: 0;
+                    font-size:3em; 
+                    font-family: 'Poppins', sans-serif; 
+                    color: #ffffff; 
+                    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                                0 0 30px rgba(255, 255, 255, 0.5), 
+                                0 0 45px rgba(0, 123, 255, 0.7);
+                }
+        
+                h3{
+                    text-decoration: underline;
+            
+        
+                }
+                .exoplanet-info {
+                    display: flex;
+                    flex-direction: column; 
+                    align-items: center; 
+                    padding: 20px;
+                }
+        
+                .image {
+                    display: flex;
+                    justify-content: center; 
+                    transform-style: preserve-3d;
+                    position: sticky; /* Sticky positioning */
+                    top: 20px; /* Stick at the top after scrolling 20px */
+                    margin-bottom: 20px;
+                    z-index: 1; /* Ensure image stays below other elements when scrolling */
+                }
+        
+                .image img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    object-fit: cover; 
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                    animation: spin 10s infinite linear; 
+                    transform-origin: center; 
+                }
+        
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+        
+                .info {
+                    width: 80%;
+                    padding: 20px; 
+                    background: rgba(255, 255, 255, 0.1); 
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+                    height: auto; 
+                    min-height: 400px;
+                    z-index: 2; /* Place the info box above the image */
+                    position: relative;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1 >GJ 3470 b<h1>
+            </header>
+        
+            <main>
+                <section class="exoplanet-info">
+                    <div class="image">
+                        <img src="GJ 3470 b.png" alt="GJ 3470 b">
+                    </div>
+                    <div class="info">
+                        <h2>About GJ 3470 b</h2>
+                        <p>
+                            GJ 3470 b is a Neptune-sized exoplanet located approximately 96 light-years away in the constellation Cancer.
+                        </p>
+                        <p>
+                            Discovered in 2012, it orbits a red dwarf star (GJ 3470) and is a fascinating target for studying the atmospheres of exoplanets, especially in the category of "warm Neptunes."
+                        </p>
+                        
+                        <h3>Physical Characteristics</h3>
+                        <ul>
+                            <li><strong>Mass:</strong> About 12.6 times that of Earth.</li>
+                            <li><strong>Size:</strong> Approximately 4.3 times Earth’s radius, placing it in the category of sub-Neptunes.</li>
+                            <li><strong>Orbital Period:</strong> 3.3 Earth days, making it a very close-in planet to its host star.</li>
+                            <li><strong>Distance from Star:</strong>About 0.034 AU (extremely close, leading to a hot atmosphere).</li>
+                            <li><strong>Star Type:</strong>  GJ 3470 is a red dwarf star, which is smaller and cooler than the Sun.</li>
+                        </ul>
+        
+                        <h3>Conditions on GJ 3470 b</h3>
+                        <p>
+                            GJ 3470 b is a gas-rich planet with a light, hydrogen-helium atmosphere. It is one of the least dense exoplanets of its size, and studies suggest that it may be slowly losing its atmosphere due to its proximity to its star. The planet’s composition is thought to be a mix of gas and possibly a rocky core, similar to Neptune.
+                        </p>
+                        <h3>Potential for Life</h3>        
+                        <p>Due to its gaseous nature, GJ 3470 b is not considered habitable. It lacks a solid surface, and its extreme temperatures and proximity to its host star make conditions unsuitable for life as we know it.</p>
+        
+                        <p>The planet’s atmosphere likely consists of hydrogen, helium, and possibly water vapor. Observations suggest that it may also have traces of methane and other gases.</p>
+        
+                        <h3>Exploration and Future Research</h3>
+                        <p><strong>Scientific Interest:</strong>  GJ 3470 b is particularly interesting to scientists because it offers a chance to study atmospheric loss in a Neptune-like planet. This could provide insights into how similar exoplanets evolve over time.
+                        </p>
+                        <p><strong>Telescopic Observations:</strong>  The Hubble and Spitzer Space Telescopes have provided detailed observations of the planet’s atmosphere, including data on its composition and the rate of atmospheric loss. Future studies may use instruments like the James Webb Space Telescope to gather even more information on its atmospheric characteristics.
+        
+        
+                        <p>GJ 3470 b is a key target in the study of exoplanet atmospheres and the effects of extreme proximity to a star, making it a valuable object for understanding the evolution of warm Neptune-like exoplanets.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </body>
+        </html>
